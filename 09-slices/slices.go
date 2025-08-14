@@ -21,6 +21,10 @@ func main() {
 	fmt.Println("set:", s)
 	fmt.Println("get:", s[2])
 
+	for i, v := range s {
+		fmt.Println("for:", i, v)
+	}
+
 	s = append(s, "d")
 	s = append(s, "e", "f")
 	fmt.Println("apd:", s, " len:", len(s))
